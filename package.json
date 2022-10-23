@@ -1,0 +1,49 @@
+{
+  "name": "desktop-boilerplate",
+  "productName": "Desktop Boilerplate",
+  "description": "Electron Vite React Chakra-UI ESLint Boilerplate.",
+  "author": "Julio Cesar Mowes <t-mowes@hotmail.com>",
+  "version": "3.0.0",
+  "license": "MIT",
+  "main": "dist-electron/electron/main/index.js",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && electron-builder",
+    "lint": "eslint src/**/*.ts* --fix"
+  },
+  "engines": {
+    "node": "^14.18.0 || >=16.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.19.6",
+    "@chakra-ui/react": "^2.3.6",
+    "@chakra-ui/styled-system": "^2.3.4",
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@piktew/eslint-config-react": "^1.0.0",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.1.0",
+    "date-fns": "^2.29.3",
+    "electron": "^21.2.0",
+    "electron-builder": "^23.6.0",
+    "esbuild": "^0.15.12",
+    "eslint": "^8.26.0",
+    "framer-motion": "6.5.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-select": "^5.5.4",
+    "typescript": "^4.8.4",
+    "vite": "^3.1.8",
+    "vite-electron-plugin": "^0.4.6",
+    "vite-plugin-electron-renderer": "^0.10.1"
+  },
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:7777"
+    }
+  }
+}

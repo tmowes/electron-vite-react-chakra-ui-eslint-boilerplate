@@ -1,0 +1,32 @@
+/**
+ * @see https://www.electron.build/configuration/configuration
+ */
+{
+  appId: "com.piktew.desktop-boilerplate",
+  productName: "Desktop Boilerplate",
+  copyright: "Copyright © 2022 ${author}",
+  asar: true,
+  directories: {
+    output: "bundle/${version}",
+    buildResources: "electron/resources",
+  },
+  files: [
+    "dist-electron",
+    "dist"
+  ],
+  win: {
+    target: [
+      {
+        target: "nsis",
+        arch: ["x64"],
+      },
+    ],
+    artifactName: "${productName}-Windows-${version}-Setup.${ext}",
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowToChangeInstallationDirectory: true,
+    deleteAppDataOnUninstall: false,
+  },
+}
